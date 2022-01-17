@@ -1,0 +1,14 @@
+{
+  "extends": "next/core-web-vitals",
+  "semi": "off",
+  "@typescript-eslint/semi": ["error"],
+  "multiline": {
+    "delimiter": "semi",
+    "requireLast": true
+  },
+  "singleline": {
+    "delimiter": "semi",
+    "requireLast": false
+  },
+  "multilineDetection": "brackets"
+}
