@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
+        <h1 className="text-3xl font-bold underline text-purple-500">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
       </main>
