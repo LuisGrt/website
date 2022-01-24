@@ -1,0 +1,58 @@
+@import '../../styles/mixins';
+
+.navbar {
+  transition: box-shadow 1000ms ease;
+  font-size: 1.2em;
+
+  .container {
+    @include flexilize(row, center, center, wrap);
+
+    .navbarBrand {
+      a {
+        color: $light-text;
+        text-decoration: none;
+        background-color: transparent;
+        margin: 0.5em 0.2em;
+      }
+    }
+
+    .menu {
+      justify-content: flex-end;
+
+      .dropdown {
+        margin: 0.8em;
+
+        .dropdown-item {
+          &.current {
+            background-color: $primary-dimmed-5;
+            color: $light-text;
+
+            .langCheck {
+              color: rgb(21, 210, 21);
+
+              svg {
+                padding-bottom: 4px;
+              }
+            }
+          }
+
+          &:hover:not(.current),
+          &:active:not(.current) {
+            background-color: $primary-dimmed-1;
+            color: $dark-text;
+          }
+        }
+      }
+
+      @include xl {
+        font-size: 0.9em;
+
+      }
+
+      @include lg {
+        font-size: 0.86em;
+
+      }
+    }
+  }
+}

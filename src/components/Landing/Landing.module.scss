@@ -1,0 +1,92 @@
+@import '../../shared/styles/mixins';
+
+.landing {
+  @include flexilize(column, center, flex-start);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  border-radius: 0;
+  margin-bottom: 0;
+  color: $light-text;
+  background: linear-gradient(rgba(22, 22, 22, 0.6) 0%, rgba(22, 22, 22, 0.6) 100%),
+  url('/images/background.jpeg') center center/cover no-repeat scroll;
+
+  h1 {
+    margin-left: 2em;
+    font-weight: 500 !important;
+  }
+
+  .movingText {
+    display: block;
+    margin-left: 4.3em;
+    font-size: 2em;
+    height: 50px;
+    .typed-cursor {
+      font-weight: bold;
+    }
+  }
+
+  .particlesJS {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+  }
+
+  @include xl {
+    h1 {
+      font-size: 4rem !important;
+    }
+    .movingText {
+      margin-left: 4.5em;
+      font-size: 1.9em;
+    }
+  }
+
+  @include lg {
+    h1 {
+      margin-left: 1em;
+      font-size: 3.5rem !important;
+    }
+    .movingText {
+      margin-left: 2.2em;
+      font-size: 1.8em;
+    }
+  }
+
+  @include md {
+    h1 {
+      margin-left: 0.5em;
+      font-size: 3rem !important;
+    }
+    .movingText {
+      margin-left: 1.5em;
+      font-size: 1.2em;
+    }
+  }
+
+  @include sm {
+    margin: 0;
+    height: 80vh;
+    h1 {
+      font-size: 2.6rem !important;
+    }
+    .movingText {
+      font-size: 1.1em;
+    }
+  }
+
+  @include xs {
+    h1 {
+      margin-left: 0;
+      font-size: 2.2rem !important;
+    }
+    .movingText {
+      margin-left: 0.3em;
+      font-size: 0.95em;
+    }
+  }
+}

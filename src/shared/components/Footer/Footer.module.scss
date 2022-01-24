@@ -1,0 +1,29 @@
+@import '../../styles/mixins';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 85%;
+  padding: 1em 0;
+  color: $light-subtext;
+
+  p:first-child {
+    margin: 0;
+  }
+
+  @include md {
+    font-size: 80%;
+
+  }
+
+  @include sm {
+    font-size: 75%;
+
+  }
+
+  @include xs {
+    font-size: 70%;
+
+  }
+}

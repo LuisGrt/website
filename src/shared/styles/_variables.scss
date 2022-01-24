@@ -1,0 +1,20 @@
+$primary: rgb(24, 39, 44); // #18272c;
+$primary-dimmed-1: rgba(24, 39, 44, 0.1);
+$primary-dimmed-2: rgba(24, 39, 44, 0.25);
+$primary-dimmed-3: rgba(24, 39, 44, 0.5);
+$primary-dimmed-4: rgba(24, 39, 44, 0.7);
+$primary-dimmed-5: rgba(24, 39, 44, 0.85);
+$primary-dimmed-6: rgba(24, 39, 44, 0.989);
+
+$dark-text: rgb(33, 37, 41); // #212529
+$dark-subtext: rgba(52, 58, 64, 0.878); // #343a40
+$light-text: rgb(233, 236, 239); // #e9ecef
+$light-subtext: rgb(193, 202, 210); // #c1cad2
+
+$light-background: $light-text;
+
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
